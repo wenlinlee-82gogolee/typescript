@@ -1,4 +1,5 @@
-/* 
+"use strict";
+/*
 ////Type Basics
 let character = 'Superman';
 let age = 30;
@@ -12,7 +13,6 @@ const circ = (diameter: number) => {
 
 console.log(circ(7.5));
 */
-
 /*
 ////////////arrays////////////
 ////Example: Arrays with type of strings
@@ -31,7 +31,6 @@ let mixed = ['Wyn', 1, 'Lee', 4, true, 5]; //initial declare=string, number or b
 mixed.push(2);
 mixed.push('orange');
 */
-
 /*
 ////////////objects////////////
 let me = {
@@ -58,7 +57,6 @@ me = {
   age: 18,
 };
 */
-
 /*
 ////////////Explicit types////////////
 ////Normal variables
@@ -104,12 +102,8 @@ let aboutMe2: {
 
 
 */
-
 /*
 ////////////Dynamic (any) Types////////////
-
-*/
-
 //Example: normal variable
 let age: any;
 
@@ -134,3 +128,5 @@ me = {
   age: 'hello',
 };
 console.log(me);
+*/
+console.log('test');
