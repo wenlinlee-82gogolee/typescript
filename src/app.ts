@@ -133,4 +133,56 @@ me = {
 console.log(me);
 */
 
-console.log('test');
+/*
+////////////Functions///////////
+//Example: try to set variable of a function to a string Error
+let greet = () => {
+  console.log('Hello World');
+};
+
+greet = 'hoho'; //error , greet has declared as function
+
+//Example: Explicit for Functions
+let greet2: Function;
+
+greet = () => {
+  console.log('Hello');
+};
+
+//Example: set types for parameters
+const add = (a: number, b: number) => {
+  console.log(a + b);
+};
+
+add(5, 7);
+
+//Example: set optional  parameters,
+const add2 = (a: number, b: number, c?: number | string) => {
+  console.log(a + b);
+  console.log(c);
+};
+
+add2(5, 7);
+add2(5, 7, 'hello');
+
+//Example: set optional  parameters, and with a default value set
+const add3 = (a: number, b: number, c: number | string = 'default value') => {
+  console.log(a + b);
+  console.log(c);
+};
+
+add3(5, 7);
+add3(5, 7, 'hello');
+
+//Example: Function with returning value
+const minus = (a: number, b: number) => {
+  return a + b;
+};
+
+let result = minus(1, 1); //result will be a number type, because of the return from the function
+
+//Example: set the return type of a function
+const minus2 = (a: number, b: number): number => {
+  return a + b;
+};
+*/
