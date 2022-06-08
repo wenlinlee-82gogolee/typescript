@@ -56,3 +56,41 @@ me = {
   age: 18,
 };
 */
+/*
+////////////Explicit types////////////
+////Normal variables
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+////array
+let numArray: number[] = [];
+let stringArray: string[] = [];
+let booleanArray: boolean[] = [];
+
+numArray = [1, 2, 3];
+numArray = ['apple', 'orange']; //error
+
+////union types (mix types)
+//Example:Array
+let mixed: (string | number | booleanå)[] = [];
+mixed.push('weewe');
+mixed.push(1);
+mixed.push(true);
+console.log(mixed);
+
+//Example:Normal Variables
+let uid: string | number;
+uid = '123';
+uid = 123;
+
+*/
+////objects
+//Example1
+var aboutMe1;
+aboutMe1 = {
+    name: 'sewewr',
+    age: 100
+};
+//Example2
+var aboutMe2;
