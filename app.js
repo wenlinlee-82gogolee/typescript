@@ -84,13 +84,43 @@ let uid: string | number;
 uid = '123';
 uid = 123;
 
-*/
 ////objects
 //Example1
-var aboutMe1;
+let aboutMe1: object;
 aboutMe1 = {
-    name: 'sewewr',
-    age: 100
+  name: 'sewewr',
+  age: 100,
 };
+
 //Example2
-var aboutMe2;
+let aboutMe2: {
+  name: string;
+  age: number;
+  glasses: false;
+};
+
+
+*/
+/*
+////////////Dynamic (any) Types////////////
+
+*/
+//Example: normal variable
+var age;
+age = 25;
+age = false;
+age = { name: 'hello' };
+console.log(age);
+//Example: array with mixed values
+var mixed = [];
+mixed.push(1);
+mixed.push('hello');
+mixed.push(true);
+console.log(mixed);
+//Example: object with mixed values
+var me;
+me = {
+    name: 12,
+    age: 'hello'
+};
+console.log(me);

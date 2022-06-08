@@ -104,3 +104,33 @@ let aboutMe2: {
 
 
 */
+
+/*
+////////////Dynamic (any) Types////////////
+
+*/
+
+//Example: normal variable
+let age: any;
+
+age = 25;
+age = false;
+age = { name: 'hello' };
+console.log(age);
+
+//Example: array with mixed values
+let mixed: any[] = [];
+
+mixed.push(1);
+mixed.push('hello');
+mixed.push(true);
+console.log(mixed);
+
+//Example: object with mixed values
+let me: { name: any; age: any };
+
+me = {
+  name: 12,
+  age: 'hello',
+};
+console.log(me);
