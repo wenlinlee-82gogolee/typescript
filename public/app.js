@@ -205,3 +205,32 @@ const greet2 = (user: objWithName) => {
   console.log(`${user.name} says hello`);
 };
 */
+/*
+////////////Function Signatures////////////
+//Example: two args, both string and return void
+let greet: (a: string, b: string) => void;
+
+greet = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`);
+};
+
+//Example: three args (two numbers, and one string), and return number
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action === 'add') {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+};
+
+//Example: one paremeter of object with name and age properties, and return void
+let logDetails: (obj: { name: string; age: number }) => void;
+type person = { name: string; age: number }; //alias
+
+logDetails = (student: person) => {
+  console.log(`${student.name} is ${student.age} years old`);
+};
+
+*/
