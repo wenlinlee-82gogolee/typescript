@@ -182,3 +182,26 @@ const minus2 = (a: number, b: number): number => {
   return a + b;
 };
 */
+/*
+////////////Type Aliases////////////
+//Example: without type Aliases
+const logDetails = (uid: string | number, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
+
+const greet = (user: { name: string; uid?: string | number }) => {
+  console.log(`${user.name} says hello`);
+};
+
+//Example: make type Aliases
+type StringOrNum = string | number;
+type objWithName = { name: string; uid: StringOrNum };
+
+const logDetails2 = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
+
+const greet2 = (user: objWithName) => {
+  console.log(`${user.name} says hello`);
+};
+*/
