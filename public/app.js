@@ -234,3 +234,23 @@ logDetails = (student: person) => {
 };
 
 */
+/*
+////////////DOM and Type Casting////////////
+////Example: null error
+const anchor = document.querySelector('a');
+console.log(anchor.href); //error because typescript will not know if the element exist or not in html during development
+
+//Solve Problem Method 1: use conditional, if anchor is truthy...
+if (anchor) {
+  console.log(anchor.href);
+}
+
+//Solve Problem Method 2: to solve the error: if we are certain that the element exist in the html file, we can use an ! at the end, and the error will not appear
+const anchor2 = document.querySelector('a')!;
+console.log(anchor2.href);
+
+////Example: Type Casting
+//Without casting, typescript will only set it to an element, but if we declare the right type, we can have the correct methods/methods for the intellisense
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+console.log(form.children);
+*/
